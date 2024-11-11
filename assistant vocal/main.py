@@ -1,6 +1,9 @@
 from imports import *
 
 
+###     only for french users    ###
+###             sorry            ###
+
 # init la reconnaissance/synthèse vocale
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
@@ -11,7 +14,7 @@ def speak(text):
     engine.say(text)
     engine.runAndWait()
     voices = engine.getProperty('voices')
-    engine.setProperty('voice', voices[1].id)  # Utiliser la voix 'French Female'
+    engine.setProperty('voice', voices[1].id) 
 
 
 
